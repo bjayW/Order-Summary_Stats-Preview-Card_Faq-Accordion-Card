@@ -6,7 +6,6 @@ const orderSummary = () => {
           src="../../images/Osc/background.svg"
           alt="top-backgroung-img"
           class="img-fluid"
-          className="rounded-top"
           style={{borderTopLeftRadius: "15px"}}
         />
       </div>
@@ -18,6 +17,7 @@ const orderSummary = () => {
               src="../../images/Osc/listeningToMusic.svg"
               alt="Listening to Music Image"
               class="img-fluid"
+              className="os-img"
             />
             <div className="row">
               <div className="col-3"> </div>
@@ -47,7 +47,7 @@ const orderSummary = () => {
                 </div>
                 <p className="change">Change</p>
               </div>
-              <button className="btn-block">Proceed to Payment</button>
+              <button className="btn-block os-button">Proceed to Payment</button>
               <p className="cancel">Cancel Order</p>
             </div>
           </div>
