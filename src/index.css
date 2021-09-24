@@ -13,11 +13,13 @@ body {
   align-items: center;
   padding-left: 0;
   padding-right: 0;
+  width: 450px;
 }
 
 .os-img {
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
+  
 }
 
 .box-items {

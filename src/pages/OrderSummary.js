@@ -1,4 +1,4 @@
-const orderSummary = () => {
+const OrderSummary = () => {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -6,7 +6,6 @@ const orderSummary = () => {
           src="../../images/Osc/background.svg"
           alt="top-backgroung-img"
           class="img-fluid"
-          style={{borderTopLeftRadius: "15px"}}
         />
       </div>
       <div className="container">
@@ -58,4 +57,4 @@ const orderSummary = () => {
   );
 };
 
-export default orderSummary;
+export default OrderSummary;
