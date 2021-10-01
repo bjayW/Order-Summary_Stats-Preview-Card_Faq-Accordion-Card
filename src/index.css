@@ -1,8 +1,7 @@
 @import url(https://fonts.google.com/specimen/Red+Hat+Display);
 
 body {
-  font-family: "Red Hat Display", 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif !important;
-  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif !important; 
 }
 
 .box {
@@ -78,3 +77,55 @@ body {
   font-weight: bold;
   font-size: 12px;
 }
+
+
+.space {
+  margin-bottom: 12.5%;
+}
+
+.card-text {
+  background: hsl(244, 38%, 16%);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 100px 40px 90px;
+  margin-right: -7px;
+}
+
+.big-card-text {
+  margin-bottom: 35px;
+  color: hsl(0, 0%, 100%);
+}
+
+.insights-text {
+  color: hsl(277, 64%, 61%);
+}
+
+.sm-card-text {
+  margin-bottom: 70px;
+  font-size: 14.5px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-right: 90px;
+  font-weight: 400;
+}
+.card-image {
+width: 580px;
+margin-left:-7px;
+}
+
+.figures {
+  display: flex;
+  flex-direction: row;
+  color: hsl(0, 0%, 100%);
+}
+
+.fig {
+  margin-right: 70px;
+}
+.sm-text {
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: -5px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+

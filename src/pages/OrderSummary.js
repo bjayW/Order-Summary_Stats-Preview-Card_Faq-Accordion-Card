@@ -1,6 +1,6 @@
 const OrderSummary = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{background: 'hsl(225, 100%, 94%)', height: "100vh"}}>
       <div className="row">
         <img
           src="../../images/Osc/background.svg"
