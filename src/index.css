@@ -1,7 +1,9 @@
 @import url(https://fonts.google.com/specimen/Red+Hat+Display);
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
 
 body {
-  font-family: "Red Hat Display", 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif !important; 
+  font-family: "Red Hat Display", "Lexend Deca" 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif !important; 
 }
 
 .box {
@@ -103,14 +105,27 @@ body {
 
 .sm-card-text {
   margin-bottom: 70px;
-  font-size: 14.5px;
+  font-size: 16px;
   color: hsla(0, 0%, 100%, 0.75);
-  padding-right: 90px;
+  padding-right: 85px;
   font-weight: 400;
 }
 .card-image {
 width: 580px;
 margin-left:-7px;
+z-index: 1;
+}
+
+.card-image::before {
+  content: "";
+    display: block;
+    width: 540px;
+    height: 446px;
+    position: absolute;
+    
+    background-color: hsla(278, 46%, 28%, 0.812);
+    opacity: .8;
+    z-index: 0;
 }
 
 .figures {
