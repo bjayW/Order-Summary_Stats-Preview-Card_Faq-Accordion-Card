@@ -17,7 +17,7 @@ const StatsPreviewCard = () => {
           </div>
         </div>
         <div className="col-md-6 card-image">
-          <img src="https://raw.githubusercontent.com/saadshaikh1992/stats-preview-card-component/main/image-header-desktop.jpg" alt="main-page-img" class="img-fluid" />
+          <img src="https://raw.githubusercontent.com/saadshaikh1992/stats-preview-card-component/main/image-header-desktop.jpg" alt="main-page-img" class="img-fluid" className="spc-img"/>
         </div>
         </div>
         </div>
