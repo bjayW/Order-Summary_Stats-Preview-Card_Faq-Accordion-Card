@@ -151,3 +151,8 @@ border-radius: 10px;
   color: hsla(0, 0%, 100%, 0.6);
 }
 
+.faq-box {
+  margin: auto auto;	
+  background-color: white;
+  height: 600px;
+}
