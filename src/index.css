@@ -126,13 +126,13 @@ border-radius: 10px;
 
 .card-image::before {
   content: "";
-    display: block;
-    width: 540px;
-    height: 446px;
-    position: absolute;
-    background-color: rgba(100, 7, 150, 0.997);
-    opacity: .6;
-    z-index: 0;
+  display: block;
+  width: 540px;
+  height: 446px;
+  position: absolute;
+  background-color: rgba(100, 7, 150, 0.997);
+  opacity: .6;
+  z-index: 0;
 }
 
 .figures {
@@ -154,5 +154,22 @@ border-radius: 10px;
 .faq-box {
   margin: auto auto;	
   background-color: white;
-  height: 600px;
+  height: 500px;
+  width: 1000px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.bg-pattern-image {
+  margin-left: -34rem;
+  margin-top: -18rem;
+}
+
+.woman-online-image {
+  margin-top: -53rem;
+  margin-left: -5rem;
+}
+
+.faq-text {
+  padding: 50px;
 }
