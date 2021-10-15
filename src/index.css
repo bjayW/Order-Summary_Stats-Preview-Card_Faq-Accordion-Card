@@ -1,6 +1,7 @@
 @import url(https://fonts.google.com/specimen/Red+Hat+Display);
 @import url(https://fonts.google.com/specimen/Inter);
 @import url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
 
 body {
   font-family: "Red Hat Display", "Lexend Deca" 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif !important; 
@@ -171,5 +172,32 @@ border-radius: 10px;
 }
 
 .faq-text {
-  padding: 50px;
+  padding-top: 60px;
+  align-items: center;
+}
+
+.faq {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.arrow-icon {
+  padding: 5px;
+  max-height: 17px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.answer {
+  display: none;
+}
+
+hr {
+  margin: 0;
 }
