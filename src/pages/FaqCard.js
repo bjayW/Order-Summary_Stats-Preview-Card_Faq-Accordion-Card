@@ -5,34 +5,46 @@ import Faq from "../Faq";
 const FaqCard = () => {
   const [faqs, setFaqs] = useState([
     {
-      id: "Q1",
       question: "How many team members can I invite?",
       answer: "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
+      open: false,
     },
     {
-      id: "Q2",
+      
       question: "What is the maximum file upload size?",
       answer: "No more than 2GB. All files in your account must fit your allotted storage space.",
+      open: false,
     },
 
     {
-      id: "Q3",
       question: "How do I reset my password?",
       answer: "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.",
+      open: false,
     },
     {
-      id: "Q4",
       question: "Can I cancel my subscription?",
       answer: "Yes! Send us a message and we’ll process your request no questions asked.",
+      open: false,
     },
     {
-      id: "Q5",
       question: "Do you provide additional support?",
       answer: "Chat and email support is available 24/7. Phone lines are open during normal business hours.",
+      open: false,
     },
   ]);
 
   //useScript("../script.js");
+
+  const toggleFaq = index => {
+    setFaqs(faqs.map((faq, i) => {
+      if(i === index) {
+        faq.open = !faq.open
+      } else {
+        faq.open = false;
+      }
+      return faq;
+    }))
+  }
 
   return (
     <div
@@ -58,15 +70,21 @@ const FaqCard = () => {
               class="img-fluid"
               className="woman-online-image"
             />
+            <img
+              src="../../images/FaqC/box.svg"
+              alt="box-img"
+              class="img-fluid"
+              className="box-image"
+            />
           </div>
           <div className="col-1"></div>
           <div className="col-md-5 faq-text">
-            <h2 className="faq">FAQ</h2>
+            <h2 className="title-faq">FAQ</h2>
             <div className="col-12">
-              <div className="question">
-                {faqs.map((faq) => (
+              <div className="faqs">
+                {faqs.map((faq, i) => (
                   <div className="">
-                    <Faq faq={faq} key={faq.id} />
+                    <Faq faq={faq} index={i}  toggleFaq={toggleFaq}/>
                   </div>
                 ))}
               </div>
