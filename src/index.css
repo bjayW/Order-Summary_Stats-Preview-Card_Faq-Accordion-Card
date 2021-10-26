@@ -225,3 +225,15 @@ hr {
   max-height: 1000px;
   opacity: 1;
 }
+
+.next-button {
+  margin: auto;
+  margin-top: 15px;
+  width: 0%;
+  font-size: 40px;
+}
+
+.color-button {
+  color: blue;
+  
+}

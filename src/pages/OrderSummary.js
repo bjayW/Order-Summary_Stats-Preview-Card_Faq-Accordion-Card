@@ -1,3 +1,5 @@
+import NextButton from "../NextButton";
+
 const OrderSummary = () => {
   return (
     <div className="container-fluid" style={{background: 'hsl(225, 100%, 94%)', height: "100vh"}}>
@@ -51,6 +53,11 @@ const OrderSummary = () => {
             </div>
           </div>
           <div className="col-4"></div>
+        </div>
+        <div className="row">
+        <div className="col-12 color-button">
+        <NextButton />
+        </div>
         </div>
       </div>
     </div>
