@@ -1,6 +1,12 @@
-import NextButton from "../NextButton";
+import { useHistory } from "react-router";
 
 const OrderSummary = () => {
+
+  let history = useHistory();
+  const routeChange = (path) => {
+    history.push(path);
+  };
+
   return (
     <div className="container-fluid" style={{background: 'hsl(225, 100%, 94%)', height: "100vh"}}>
       <div className="row">
@@ -55,8 +61,8 @@ const OrderSummary = () => {
           <div className="col-4"></div>
         </div>
         <div className="row">
-        <div className="col-12 color-button">
-        <NextButton />
+        <div className="col-12 os-next-button">
+        <i class="fas fa-arrow-alt-circle-right" onClick={() => routeChange("/stats-preview-card")}/>
         </div>
         </div>
       </div>

@@ -1,4 +1,12 @@
+import { useHistory } from "react-router";
+
 const StatsPreviewCard = () => {
+  let history = useHistory();
+
+  const routeChange = (path) => {
+    history.push(path);
+  };
+
   return (
     <div style={{background: "hsl(233, 47%, 7%)", height: "100vh", zIndex: "-2", }}>
     <div className="container" >
@@ -20,6 +28,9 @@ const StatsPreviewCard = () => {
           <img src="https://raw.githubusercontent.com/saadshaikh1992/stats-preview-card-component/main/image-header-desktop.jpg" alt="main-page-img" class="img-fluid" className="spc-img"/>
         </div>
         </div>
+        </div>
+        <div className="spc-next">
+        <i class="fas fa-arrow-alt-circle-right" onClick={() => routeChange("/faq-card")}/>
         </div>
     </div>
   );

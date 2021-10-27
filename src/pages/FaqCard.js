@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import useScript from "../useScript";
 import Faq from "../Faq";
 
 const FaqCard = () => {

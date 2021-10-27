@@ -226,14 +226,20 @@ hr {
   opacity: 1;
 }
 
-.next-button {
+.os-next-button {
   margin: auto;
-  margin-top: 15px;
-  width: 0%;
-  font-size: 40px;
+  margin-top: 10px;
+  width: 4%;
+  font-size: 50px;
+  color: blue;
+  cursor: pointer;
 }
 
-.color-button {
-  color: blue;
-  
+.spc-next {
+  color: rgba(100, 7, 150, 0.997);
+  margin: auto;
+  margin-top: 12px;
+  width: 5%;
+  font-size: 60px;
+  cursor: pointer;
 }
