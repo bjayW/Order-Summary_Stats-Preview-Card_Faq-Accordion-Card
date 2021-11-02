@@ -61,7 +61,7 @@ const FaqCard = () => {
             <img
               src="../../images/FaqC/bgPattern.svg"
               alt="bg-pattern-image"
-              className=" bg-pattern-image"
+              className="bg-pattern-image"
             />
             <img
               src="../../images/FaqC/womanOnline.svg"

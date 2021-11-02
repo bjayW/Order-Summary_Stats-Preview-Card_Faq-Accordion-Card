@@ -3,8 +3,10 @@
 @import url(https://fonts.google.com/specimen/Lexend+Deca);
 @import url(https://fonts.google.com/specimen/Kumbh+Sans);
 
+
 body {
-  font-family: "Red Hat Display", "Lexend Deca" 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif !important; 
+  font-family: "Red Hat Display", "Lexend Deca" 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', sans-serif !important;
+  display: grid; 
 }
 
 .box {
@@ -242,4 +244,39 @@ hr {
   width: 5%;
   font-size: 60px;
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .faq-box {
+    width: 350px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 0.5rem;
+    position: relative;
+    height: 600px;
+    background-image: url("../src/womanOnlineMobile.svg");
+    background-repeat: no-repeat;
+    background-position: center -3%;
+    padding: 1rem;
+    align-items: center;
+    padding-top: 5rem;
+    overflow: visible;
+  }
+
+  .title-faq {
+    text-align: center;
+  }
+
+  .bg-pattern {
+   position: absolute;
+   
+  }
+
+  .woman-online-image, .box-image, .bg-pattern-image {
+    display: none;
+  }
+
+  .faq-text {
+    margin-top: 0px;
+  }
 }
