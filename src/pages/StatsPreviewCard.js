@@ -10,12 +10,11 @@ const StatsPreviewCard = () => {
   return (
     <div style={{background: "hsl(233, 47%, 7%)", height: "100vh", zIndex: "-2", }}>
     <div className="container" >
-      <div className="row space">
-        <div className="col-12"></div>
+      <div className="row spc-space">
       </div>
-      <div className="row container-fluid ">
-        <div className="col-md-6 card-text ">
-          <h1 className="big-card-text">Get <span className='insights-text'>insights</span> that help your business grow.</h1>
+      <div className="row spc-box">
+        <div className="col-md-5 card-text ">
+          <h2 className="big-card-text">Get <span className='insights-text'>insights</span> that help your business grow.</h2>
           <p className="sm-card-text">Discover the benefits of data analytics and make better decision regarding revenue, customer 
             experience, and overall efficiency.</p>
           <div className="figures">
@@ -24,7 +23,7 @@ const StatsPreviewCard = () => {
           <span className="fig"><h4 >12M+</h4> <p className="sm-text">QUERIES</p></span>
           </div>
         </div>
-        <div className="col-md-6 card-image">
+        <div className="col-md-5 card-image">
           <img src="https://raw.githubusercontent.com/saadshaikh1992/stats-preview-card-component/main/image-header-desktop.jpg" alt="main-page-img" class="img-fluid" className="spc-img"/>
         </div>
         </div>

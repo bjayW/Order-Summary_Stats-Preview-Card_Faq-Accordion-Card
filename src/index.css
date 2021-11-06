@@ -88,6 +88,10 @@ body {
   margin-bottom: 12.5%;
 }
 
+.spc-space {
+  margin-bottom: 12.5%;
+}
+
 .spc-img {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -96,9 +100,10 @@ body {
 .card-text {
   background: hsl(244, 38%, 16%);
   color: white;
-  justify-content: center;
+  width: 540px;
+  height: 446px;
   align-items: center;
-  padding: 60px 100px 40px 90px;
+  padding: 60px 70px 4px;
   margin-right: -7px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -106,6 +111,8 @@ body {
 
 .big-card-text {
   margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 34px;
   color: hsl(0, 0%, 100%);
 }
 
@@ -117,7 +124,7 @@ body {
   margin-bottom: 70px;
   font-size: 16px;
   color: hsla(0, 0%, 100%, 0.75);
-  padding-right: 85px;
+  padding-right: 15px;
   font-weight: 400;
 }
 .card-image {
@@ -246,7 +253,7 @@ hr {
   cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 765px) {
   .faq-box {
     width: 350px;
     grid-template-columns: 1fr;
@@ -262,21 +269,43 @@ hr {
     padding-top: 5rem;
     overflow: visible;
   }
-
   .title-faq {
     text-align: center;
   }
-
   .bg-pattern {
    position: absolute;
-   
   }
-
   .woman-online-image, .box-image, .bg-pattern-image {
     display: none;
   }
-
   .faq-text {
     margin-top: 0px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .spc-box {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1195px) {
+  .spc-space {
+    margin-bottom: 1%;
+  }
+  .spc-box {
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 328px 100px;
+  }
+  .card-image {
+    max-height: 50px;
+  }
+  .big-card-text {
+    margin-bottom: 20px;
+  }
+  .sm-card-text {
+    margin-bottom: 35px;
   }
 }
